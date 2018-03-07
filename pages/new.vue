@@ -1,6 +1,5 @@
 <template>
   <div class="code">
-    <h1>Top</h1>
     <Items />
   </div>
 </template>
@@ -13,7 +12,7 @@ export default {
     Items
   },
   async fetch({store}) {
-    await store.dispatch('LOAD_ITEMS', 'topstories.json')
+    await store.dispatch('LOAD_ITEMS', 'newstories.json')
   }
 }
 </script>
